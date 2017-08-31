@@ -1,0 +1,54 @@
+.top-bar {
+	text-align: center;
+	border-style: solid;
+	border-color: lightgrey;
+	border-width: thin;
+}
+#secret-color {
+	margin-top: 1.5%;
+	padding: 1%;
+}
+#clear-button {
+	margin-bottom: 1.5%;
+}
+
+.entry {
+	background-color: lightgrey;
+	display: flex;
+	padding: 1%;
+}
+.red-bordered {
+	border-bottom-style: dashed;
+	border-color: red;
+}
+.entry-image {
+	border-radius: 100px;
+	width: 80px;
+	height: 80px;
+}
+.entry-name {
+	font-size: -webkit-xxx-large;
+}
+.entry-namedate {
+	display: flex;
+	flex-direction: column;
+	margin-left: 1%;
+}
+
+@media (max-width: 600px) {
+	.entry {
+		zoom:150%;
+		flex-direction: column;
+		align-items:center;
+	}
+	.entry-date {
+		text-align: center;
+	}
+	.entry-image {
+		width: 120px;
+		height: 120px;
+	}
+	.entry-namedate {
+		font-size: smaller;
+	}
+}
